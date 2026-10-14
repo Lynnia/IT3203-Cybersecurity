@@ -1,0 +1,221 @@
+/* Shared stylesheet for the IT 3203 cybersecurity project */
+
+/* Element selector: establishes the box model for all page elements. */
+* {
+    box-sizing: border-box;
+}
+
+/* Element selector: sets default typography and colors. */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f4f6f8;
+    color: #263238;
+    line-height: 1.6;
+}
+
+/* Shared website header. */
+header {
+    background-color: #183153;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+/* Navigation bar. */
+nav {
+    background-color: #25476a;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 4px 10px;
+    padding: 4px 2px;
+}
+
+/* Hover and keyboard-focus effects for navigation links. */
+nav a:hover,
+nav a:focus {
+    color: #ffd166;
+    text-decoration: underline;
+}
+
+/* Main content area. */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border: 1px solid #d5dce3;
+    border-radius: 6px;
+}
+
+/* Heading styles. */
+h2 {
+    color: #183153;
+    margin-top: 28px;
+}
+
+h2:first-child {
+    margin-top: 0;
+}
+
+/* General link styles. */
+a {
+    color: #155b91;
+}
+
+a:hover,
+a:focus {
+    color: #9a4f00;
+}
+
+/* ID selector: highlights the home page introduction. */
+#site-intro {
+    background-color: #eef4fa;
+    border-left: 5px solid #25476a;
+    padding: 16px 20px;
+    margin-bottom: 24px;
+}
+
+/* CSS Grid arranges the home page cards in columns. */
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+/* Class selector: reusable content-card styling. */
+.content-card {
+    padding: 18px;
+    border: 1px solid #d5dce3;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    background-color: #ffffff;
+}
+
+.content-card h3 {
+    margin-top: 0;
+    color: #183153;
+}
+
+.content-card p:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive image styling. */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+figure {
+    margin: 24px 0;
+}
+
+figcaption {
+    margin-top: 8px;
+    color: #53616d;
+    font-size: 0.95rem;
+}
+
+/* Tables can scroll horizontally on narrow screens. */
+.table-wrap {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 18px 0;
+}
+
+caption {
+    text-align: left;
+    font-weight: bold;
+    padding: 8px 0;
+}
+
+th,
+td {
+    border: 1px solid #c7d0d9;
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background-color: #e7eef5;
+    color: #183153;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f7f9fb;
+}
+
+/* Space between checklist items. */
+.checklist li {
+    margin-bottom: 8px;
+}
+
+/* Shared footer. */
+footer {
+    background-color: #183153;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 6px 0;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #ffd166;
+}
+
+/* Responsive layout for phones and smaller screens. */
+@media (max-width: 650px) {
+    header {
+        padding: 24px 15px;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    nav a {
+        margin: 4px 6px;
+    }
+
+    main {
+        margin: 15px;
+        padding: 18px;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+}
