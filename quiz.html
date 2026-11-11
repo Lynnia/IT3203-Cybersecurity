@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Test your knowledge of cybersecurity threats and website protection.">
+    <title>Cybersecurity Quiz | IT 3203 Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Shared website header -->
+    <header>
+        <h1>Cybersecurity: Protecting Websites and Personal Information</h1>
+        <p>Understanding digital threats and how to stay safe online</p>
+    </header>
+
+    <!-- Main navigation menu -->
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="topic1.html">Cybersecurity Threats</a>
+        <a href="topic2.html">Website Protection</a>
+        <a href="concepts.html">Key Concepts</a>
+        <a href="quiz.html" aria-current="page">Quiz</a>
+        <a href="references.html">References</a>
+        <a href="about.html">About Me</a>
+    </nav>
+
+    <main>
+        <h2>Cybersecurity Self-Assessment Quiz</h2>
+
+        <p>
+            Test your understanding of common cybersecurity threats,
+            website protection, and online safety. Answer all ten
+            questions before submitting your quiz.
+        </p>
+
+        <!-- Quiz timer -->
+        <section class="quiz-timer" aria-label="Quiz timer">
+            <strong>Time Remaining:</strong>
+            <span id="timer">10:00</span>
+        </section>
+
+        <form id="quiz-form">
+
+            <!-- Question 1: Fill in the blank -->
+            <fieldset class="quiz-question">
+                <legend>Question 1: Fill in the Blank</legend>
+                <label for="q1">
+                    What type of cyberattack uses fake emails or
+                    messages to trick people into revealing personal
+                    information?
+                </label>
+                <input type="text" id="q1" name="q1"
+                    placeholder="Enter your answer">
+            </fieldset>
+
+            <!-- Question 2: Multiple choice -->
+            <fieldset class="quiz-question">
+                <legend>Question 2: Multiple Choice</legend>
+                <p>What is malware?</p>
+
+                <label><input type="radio" name="q2" value="A">
+                    A program designed to improve internet speed
+                </label>
+                <label><input type="radio" name="q2" value="B">
+                    Malicious software designed to harm or access systems
+                </label>
+                <label><input type="radio" name="q2" value="C">
+                    A tool used to create strong passwords
+                </label>
+                <label><input type="radio" name="q2" value="D">
+                    A type of secure website connection
+                </label>
+            </fieldset>
+
+            <!-- Question 3: Multiple choice -->
+            <fieldset class="quiz-question">
+                <legend>Question 3: Multiple Choice</legend>
+                <p>What is a data breach?</p>
+
+                <label><input type="radio" name="q3" value="A">
+                    A scheduled software update
+                </label>
+                <label><input type="radio" name="q3" value="B">
+                    A temporary internet connection problem
+                </label>
+                <label><input type="radio" name="q3" value="C">
+                    Unauthorized access to private information
+                </label>
+                <label><input type="radio" name="q3" value="D">
+                    A method of creating website designs
+                </label>
+            </fieldset>
+
+            <!-- Question 4: Fill in the blank -->
+            <fieldset class="quiz-question">
+                <legend>Question 4: Fill in the Blank</legend>
+                <label for="q4">
+                    What security method requires users to provide
+                    two or more forms of verification when signing in?
+                </label>
+                <input type="text" id="q4" name="q4"
+                    placeholder="Enter your answer">
+            </fieldset>
+
+            <!-- Question 5: Multiple choice -->
+            <fieldset class="quiz-question">
+                <legend>Question 5: Multiple Choice</legend>
+                <p>What does HTTPS help provide when connecting to a website?</p>
+
+                <label><input type="radio" name="q5" value="A">
+                    An encrypted connection
+                </label>
+                <label><input type="radio" name="q5" value="B">
+                    Automatic removal of malware
+                </label>
+                <label><input type="radio" name="q5" value="C">
+                    Unlimited website storage
+                </label>
+                <label><input type="radio" name="q5" value="D">
+                    Protection against every online attack
+                </label>
+            </fieldset>
+
+            <!-- Question 6: Multiple selection -->
+            <fieldset class="quiz-question">
+                <legend>Question 6: Select All That Apply</legend>
+                <p>
+                    Which of the following are good cybersecurity
+                    practices? Select all correct answers.
+                </p>
+
+                <label><input type="checkbox" name="q6" value="A">
+                    Using strong, unique passwords
+                </label>
+                <label><input type="checkbox" name="q6" value="B">
+                    Enabling multifactor authentication
+                </label>
+                <label><input type="checkbox" name="q6" value="C">
+                    Clicking unknown links in suspicious emails
+                </label>
+                <label><input type="checkbox" name="q6" value="D">
+                    Keeping software updated
+                </label>
+            </fieldset>
+
+            <!-- Question 7: Multiple choice -->
+            <fieldset class="quiz-question">
+                <legend>Question 7: Multiple Choice</legend>
+                <p>What is the main purpose of a firewall?</p>
+
+                <label><input type="radio" name="q7" value="A">
+                    To design website layouts
+                </label>
+                <label><input type="radio" name="q7" value="B">
+                    To store website passwords
+                </label>
+                <label><input type="radio" name="q7" value="C">
+                    To monitor and control network traffic
+                </label>
+                <label><input type="radio" name="q7" value="D">
+                    To increase computer screen resolution
+                </label>
+            </fieldset>
+
+            <!-- Question 8: Multiple choice -->
+            <fieldset class="quiz-question">
+                <legend>Question 8: Multiple Choice</legend>
+                <p>Why should users create unique passwords for different accounts?</p>
+
+                <label><input type="radio" name="q8" value="A">
+                    It makes passwords easier to remember
+                </label>
+                <label><input type="radio" name="q8" value="B">
+                    It prevents one stolen password from unlocking multiple accounts
+                </label>
+                <label><input type="radio" name="q8" value="C">
+                    It removes the need for software updates
+                </label>
+                <label><input type="radio" name="q8" value="D">
+                    It makes websites load faster
+                </label>
+            </fieldset>
+
+            <!-- Question 9: Multiple choice -->
+            <fieldset class="quiz-question">
+                <legend>Question 9: Multiple Choice</legend>
+                <p>Why is it important to install software updates?</p>
+
+                <label><input type="radio" name="q9" value="A">
+                    They remove the need for passwords
+                </label>
+                <label><input type="radio" name="q9" value="B">
+                    They disable website security features
+                </label>
+                <label><input type="radio" name="q9" value="C">
+                    They prevent every possible cyberattack
+                </label>
+                <label><input type="radio" name="q9" value="D">
+                    They can fix security weaknesses and bugs
+                </label>
+            </fieldset>
+
+            <!-- Question 10: Multiple choice -->
+            <fieldset class="quiz-question">
+                <legend>Question 10: Multiple Choice</legend>
+                <p>What should you do if you receive an unexpected email asking for your password?</p>
+
+                <label><input type="radio" name="q10" value="A">
+                    Reply with your password
+                </label>
+                <label><input type="radio" name="q10" value="B">
+                    Click the link immediately
+                </label>
+                <label><input type="radio" name="q10" value="C">
+                    Avoid the link and verify the message through an official source
+                </label>
+                <label><input type="radio" name="q10" value="D">
+                    Forward the email to everyone you know
+                </label>
+            </fieldset>
+
+            <!-- Quiz submission and reset controls -->
+            <div class="quiz-buttons">
+                <button type="submit">Submit Quiz</button>
+                <button type="reset">Retake Quiz</button>
+            </div>
+
+        </form>
+
+        <!-- JavaScript displays quiz results here -->
+        <section id="quiz-results" aria-live="polite" hidden>
+            <h2>Your Quiz Results</h2>
+            <div id="results-content"></div>
+        </section>
+    </main>
+
+    <!-- Shared website footer -->
+    <footer>
+        <p>This website was created for an IT 3203 class project.</p>
+        <p>
+            <a href="https://ksuweb.github.io/IT3203/">
+                Visit the IT 3203 Course Website
+            </a>
+        </p>
+    </footer>
+
+    <!-- External JavaScript file controls the quiz -->
+    <script src="quiz.js"></script>
+
+</body>
+</html>
